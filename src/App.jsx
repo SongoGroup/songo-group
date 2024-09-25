@@ -1,14 +1,19 @@
+import 'tailwindcss/tailwind.css';
+import 'flowbite';
+import 'daisyui';
+
+import NavFlowbite from "./components/NavFlowbite";
+import NavbarComponent from "./components/NavbarComponent";
 import Home from "./pages/HomePage";
 
 export default function App() {
   return (
-    <>
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-
+    <div className="App">
+      <NavFlowbite/>
+    <NavbarComponent/>
     <Home/>
-    </>
+
+    </div>
 
   )
 }
